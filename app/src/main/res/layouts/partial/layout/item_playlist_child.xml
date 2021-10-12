@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_margin="3dp">
+
+    <androidx.cardview.widget.CardView
+       app:cardBackgroundColor="@color/backward_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/_7sdp">
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+       >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="120dp"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:riv_corner_radius="@dimen/_5sdp"
+            tools:src="@drawable/default_image_round"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:id="@+id/over"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ripple_effect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_below="@id/image"
+            android:id="@+id/title"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/FlatWhite"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/play"
+            android:layout_marginBottom="7dp"
+            tools:text="Playlist A" />
+
+        <ImageView
+            android:layout_below="@id/image"
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_toRightOf="@id/title"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp"
+            app:tint="@color/FlatWhite"
+            android:paddingVertical="8dp"
+            android:textSize="13sp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

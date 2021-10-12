@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/background_panel_color">
+
+    <View
+        android:id="@+id/back_top_header"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/helvetica"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:tag="sticky|-hastransparancy"
+        android:text="@string/playlists"
+        android:textColor="@color/FlatWhite"
+        android:textSize="@dimen/header1_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/back_top_header"
+        app:layout_constraintStart_toStartOf="@id/back_top_header"
+        app:layout_constraintTop_toTopOf="@id/back_top_header" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:minWidth="30dp"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="#9803E5"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/back_top_header"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/back_top_header" />
+
+    <TextView
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/see_all"
+        android:textColor="#AA7EEF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/back_top_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_top_header" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_top_header"
+        tools:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_feature_playlist"
+        tools:orientation="horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

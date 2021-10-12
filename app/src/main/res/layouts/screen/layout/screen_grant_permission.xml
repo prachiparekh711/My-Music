@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/title"
+        app:srcCompat="@drawable/storage"
+        tools:targetApi="lollipop" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_color"
+        android:gravity="center"
+        android:text="@string/access_external_storage"
+        android:textColor="@color/FlatWhite"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp"
+        android:text="@string/grant_permission_order_description"
+        android:textColor="@color/backward_color1"
+        android:textSize="@dimen/_12sdp"
+        app:fontFamily="@font/lucidabold"
+        android:layout_below="@id/title" />
+
+    <ImageView
+        android:id="@+id/allow_button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/detail"
+        app:srcCompat="@drawable/allow" />
+
+
+</RelativeLayout>

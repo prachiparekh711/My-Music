@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/backward_color"
+    tools:context=".ui.page.librarypage.song.SongChildTab">
+
+    <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/preview_random_panel"
+        android:layout_marginTop="4dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/_70sdp"
+        app:fastScrollAutoHide="true"
+        app:fastScrollAutoHideDelay="1500"
+        app:fastScrollPopupBackgroundSize="88dp"
+        app:fastScrollPopupBgColor="@color/FlatYellow"
+        app:fastScrollPopupPosition="adjacent"
+        app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+        app:fastScrollPopupTextSize="46sp"
+        app:fastScrollThumbColor="@color/FlatYellow"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_song_normal"
+        tools:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/random_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="preview_random_panel,refresh,image,shuffle_button,title,description" />
+
+<!--    <View-->
+<!--        android:id="@+id/preview_random_panel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_35sdp"-->
+<!--        android:background="@color/bg_color"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingEnd="10dp" />-->
+
+    <RelativeLayout
+        android:id="@+id/preview_random_panel"
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp">
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/ripple_oval"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:src="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/repeat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        app:srcCompat="@drawable/repeat_off" />
+
+    <ImageView
+        android:id="@+id/shuffle_button"
+        android:layout_width="25dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/repeat_button"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        app:srcCompat="@drawable/suffle_off" />
+    </RelativeLayout>
+
+</RelativeLayout>

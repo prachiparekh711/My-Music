@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/PLTheme"
+    android:fitsSystemWindows="true"
+    android:background="@color/backward_color"
+    tools:context="com.ldt.musicr.ui.page.librarypage.playlist.AddMultipleSong">
+
+    <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        app:fastScrollAutoHide="true"
+        app:fastScrollAutoHideDelay="1500"
+        app:fastScrollPopupBackgroundSize="88dp"
+        app:fastScrollPopupBgColor="@color/FlatYellow"
+        app:fastScrollPopupPosition="adjacent"
+        app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+        app:fastScrollPopupTextSize="46sp"
+        app:fastScrollThumbColor="@color/FlatYellow"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_multiple_song"
+        tools:orientation="vertical"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

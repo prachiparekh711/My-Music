@@ -1,0 +1,94 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Âm nhạc</string>
+    <string name="play">Chơi</string>
+    <string name="combine_two_strings" translatable="false">%1$s | %2$s</string>
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
+    <string name="playlist_last_added"> Mới thêm gần đây</string>
+    <string name="playlist_recently_played">Đã phát gần đây</string>
+    <string name="playlist_top_tracks">Tuyển tập yêu thích</string>
+    <string name="this_is_name_of_the_song">Đây là tên bài hát</string>
+    <string name="this_is_artist_of_the_song">Đây là tên nghệ sỹ</string>
+
+
+    <string name="songs">Bài hát</string>
+    <string name="albums">Các Album</string>
+    <string name="artists">Nghệ sỹ</string>
+    <string name="playlists">Danh sách phát</string>
+    <string name="settings">Cài đặt</string>
+    <string name="action_shuffle_all">Shuffle All</string>
+
+
+    <string name="add_to_playlist">Thêm vào danh sách</string>
+    <string name="go_to_album">Đi tới album</string>
+    <string name="go_to_artist">Xem trang nghệ sỹ</string>
+    <string name="add_to_queue">Thêm vào hàng đợi</string>
+    <string name="play_next">Chơi kế tiếp</string>
+
+
+    <string name="cancel">Hủy</string>
+    <string name="delete_from_playlist">Xóa khỏi danh sách phát</string>
+    <string name="delete_from_device">Xóa khỏi thiết bị</string>
+    <string name="share">Chia sẻ</string>
+    <string name="see_all">Xem tất cả</string>
+    <string name="feature">Gợi ý</string>
+    <string name="genres">Thể loại</string>
+    <string name="playlist">Danh sách phát</string>
+    <string name="today">Hôm nay</string>
+    <string name="title">Tiêu đề</string>
+    <string name="time_added">Thời điểm thêm vào</string>
+    <string name="this_year">Năm này</string>
+    <string name="this_week">Tuần này</string>
+    <string name="this_month">Tháng này</string>
+    <string name="save">Lưu</string>
+    <string name="playlist_is_empty">Danh sách phát trống</string>
+    <string name="history">Lịch sử</string>
+    <string name="edit">Chỉnh Sửa</string>
+    <string name="copy">Sao chép</string>
+    <string name="unplayable_file">Tập tin không thể chơi</string>
+    <string name="playlist_exists">Danh sách phát %1$s đã tồn tại</string>
+    <string name="save_as">Lưu lại</string>
+    <string name="saved_playlist_to">Đã lưu danh sách phát tới %s</string>
+    <string name="scanned_files">Đã quét xong</string>
+    <string name="sort_by_favor_asc">Sắp theo độ yêu thích</string>
+    <string name="sort_by_favor_desc">Sắp theo độ yêu thích (ngược)</string>
+    <string name="sort_by_name_asc">Sắp theo tên</string>
+    <string name="sort_by_name_desc">Sắp theo tên (ngược)</string>
+    <string name="sort_by_time_asc">Sắp theo thời gian thêm vào</string>
+    <string name="sort_by_time_desc">Sắp theo thời gian thêm vào (ngược)</string>
+    <string name="unknown_playlist">Không rõ</string>
+    <string name="all_songs">Tất cả bài hát</string>
+    <string name="favorite">Độ yêu thích</string>
+    <string name="favorites">Yêu thích</string>
+    <string name="asc">Xuôi</string>
+    <string name="desc">Ngược</string>
+    <string name="set_as_ringtone">Cài làm nhạc chuông</string>
+    <string name="edit_tag">Chỉnh sửa thẻ nhạc</string>
+    <string name="detail">Chi tiết</string>
+    <string name="repeat_it_again">Lặp lại lần nữa</string>
+    <string name="play_preview">Nghe thử</string>
+    <string name="access_external_storage">Truy cập bộ nhớ</string>
+    <string name="action_new_playlist">Tạo danh sách mới...</string>
+    <string name="action_next">Kế</string>
+    <string name="action_play_pause">Chơi/Tam dừng</string>
+    <string name="action_previous">Liền trước</string>
+    <string name="add_playlist_title">Chọn danh sách để thêm</string>
+    <string name="add_playlist_to_playlist">Thêm tất cả bài hát vào danh sách khác</string>
+    <string name="allow_access">Cho phép truy cập</string>
+    <string name="rename">Đổi tên</string>
+    <string name="grant_permission_order_description">Music ® cần quyền bộ nhớ để có thể truy cập vào thư viện nhạc. Nếu không có quyền này, ứng dụng sẽ không hoạt động đúng.</string>
+    <string name="specific_playlist">Danh sách phát tùy chỉnh</string>
+    <string name="show_lyric">Hiện lời bài hát</string>
+    <string name="added_title_to_playing_queue">Đã thêm một tiêu đề vào hàng đợi</string>
+    <string name="added_x_titles_to_playing_queue">Đã thêm %1$d tiêu đề vào hàng đợi</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="create">Tạo ngay</string>
+    <string name="customization">Tùy biến giao diện</string>
+    <string name="artist_image_background">Sử dụng ảnh nền là hình nghệ sỹ</string>
+    <string name="in_app_volume">Âm lượng ứng dụng</string>
+    <string name="specific_playlist_note">Những bài hát xuất hiện trong những sách phát này sẽ không xuất hiện trong bất kỳ danh sách phát nào, kể cả Tất cả bài hát. Hãy tạo một vài danh sách để chứa các âm thanh như Danh sách đen, Sách nói…</string>
+    <string name="change_languague_note">Yêu cầu ứng dụng khởi động lại, nhanh thôi. Nhạc đang phát sẽ không bị tắt.</string>
+    <string name="left_right_audio_balance">Cân bằng âm trái phải</string>
+    <string name="play_preview_all">Nghe thử (tất cả)</string>
+
+</resources>

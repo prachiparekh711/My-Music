@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/backward_color</item>
+        <item name="background">@drawable/bottom_bg_card</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="fontFamily">@font/play</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/FlatWhite</item>
+        <item name="colorPrimary">@color/FlatWhite</item>
+        <item name="colorAccent">@color/flatOrange</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+        <item name="colorControlHighlight">#66000000</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="fontFamily">@font/play</item>
+    </style>
+    <style name="AppThemeNoWallpaper" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/FlatWhite</item>
+        <item name="colorPrimary">@color/FlatWhite</item>
+        <item name="colorAccent">@color/flatOrange</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+        <item name="colorControlHighlight">#66000000</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="fontFamily">@font/play</item>
+    </style>
+    <style name="SplashThemeV2" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimaryDark">@color/FlatWhite</item>
+        <item name="colorPrimary">@color/FlatWhite</item>
+        <item name="colorAccent">@color/flatOrange</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+        <item name="colorControlHighlight">#66000000</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="fontFamily">@font/play</item>
+
+    </style>
+
+
+    <style name="PLTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <item name="colorPrimaryDark">@color/bg_color</item>
+        <item name="colorPrimary">@color/bg_color</item>
+        <item name="colorAccent">@color/flatOrange</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+        <item name="colorControlHighlight">#66000000</item>
+        <item name="android:statusBarColor">@color/bg_color</item>
+        <item name="android:navigationBarColor">@color/flatOrange</item>
+        <item name="fontFamily">@font/play</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

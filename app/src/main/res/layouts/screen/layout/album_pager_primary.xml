@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rlIcon"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:foreground="@drawable/background_img"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/sample" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/author"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_light"
+            android:maxLines="2"
+            android:textColor="@color/FlatWhite"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            tools:text="@string/this_is_name_of_the_song" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:fontFamily="@font/helvetica"
+            android:maxLines="2"
+            android:textColor="@color/backward_color1"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_min="25dp"
+            tools:text="@string/this_is_artist_of_the_song" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginHorizontal="17dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/ripple_oval"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_button" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/play"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/play"/>
+
+    </RelativeLayout>
+
+    <com.ldt.springback.view.SpringBackLayout
+        android:id="@+id/springBackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rlIcon">
+
+
+        <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/bottom_back_stack_spacing"
+            app:fastScrollAutoHide="true"
+            app:fastScrollAutoHideDelay="1500"
+            app:fastScrollPopupBackgroundSize="88dp"
+            app:fastScrollPopupBgColor="@color/FlatYellow"
+            app:fastScrollPopupPosition="adjacent"
+            app:fastScrollPopupTextColor="@android:color/primary_text_dark"
+            app:fastScrollPopupTextSize="46sp"
+            app:fastScrollThumbColor="@color/FlatYellow"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/item_song_normal"
+            tools:orientation="vertical" />
+    </com.ldt.springback.view.SpringBackLayout>
+
+    <View
+        android:id="@+id/gradient_line"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:alpha="0"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/springBackLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

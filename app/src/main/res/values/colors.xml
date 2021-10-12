@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backward_color">#32334F</color>
+    <color name="bg_color">#202038</color>
+    <color name="backward_color1">#7987B3</color>
+    <color name="colorAccent">@color/flatOrange</color>
+    <color name="NearlyWhite">#44ffffff</color>
+    <color name="flatOrange">#9803E5</color>
+    <color name="FlatYellow">#F0B800</color>
+    <color name="flatPurple">#5856D6</color>
+    <color name="flatBlue">#007AFF</color>
+
+    <item name="FlatWhite" type="color">#F5F5F5</item>
+    <color name="md_bottom_sheet_text_color">@color/FlatWhite</color>
+    <color name="background_panel_color">#080808</color>
+    <color name="color_aaa">#aaa</color>
+
+    <!--grey 300-->
+
+    <color name="success_stroke_color">#A5DC86</color>
+
+    <color name="rsbColorSeekBarDefault">#c3c3c3</color>
+    <color name="SplashColor">@android:color/black</color>
+
+    <color name="Tomato">#ff6347</color>
+    <color name="lightOrange">#ffaa00</color>
+    <color name="lightGreen">#3dcc3d</color>
+    <color name="lightBlue">#00aaff</color>
+
+    <color name="purpleStart">#a369ff</color>
+    <color name="roseStart">#FF6A00</color>
+    <color name="roseEnd">#B852BB</color>
+    <color name="greenEnd">#11c612</color>
+
+
+    <color name="s1">#6363FF</color>
+    <color name="s2">#B852BB</color>
+    <color name="s3">#FB5E87</color>
+
+    <color name="rama">#FB5E87</color>
+</resources>
